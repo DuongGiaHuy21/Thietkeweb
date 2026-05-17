@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản - TVU</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Sử dụng min-height vì form đăng ký dài hơn */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .register-card {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        .logo-tvu {
+            width: 100px;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            color: #00558d;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+
+        p.subtitle {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .input-group {
+            text-align: left;
+            margin-bottom: 1rem;
+            flex: 1;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 0.9rem;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #00558d;
+            box-shadow: 0 0 5px rgba(0,85,141,0.2);
+        }
+
+        .terms {
+            text-align: left;
+            font-size: 0.85rem;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+
+        .terms input {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745; /* Màu xanh lá cho nút Đăng ký để phân biệt với Đăng nhập */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .footer-links {
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-links a {
+            color: #00558d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="register-card">
+    <img src="https://cdn.haitrieu.com/wp-content/uploads/2021/12/Logo-DH-Tra-Vinh-TVU.png" alt="TVU Logo" class="logo-tvu">
+    <h2>Đăng ký tài khoản</h2>
+    
+    <form action="#">
+        <div class="input-group">
+            <label for="fullname">Họ và tên</label>
+            <input type="text" id="fullname" placeholder="Nhập họ và tên" required>
+        </div>
+
+        
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Nhập địa chỉ email" required>
+        </div>
+        
+        <div class="input-group">
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" placeholder="Tối thiểu 8 ký tự" minlength="8" required>
+        </div>
+
+        <div class="input-group">
+            <label for="confirm-password">Xác nhận mật khẩu</label>
+            <input type="password" id="confirm-password" placeholder="Nhập lại mật khẩu" required>
+        </div>
+
+        <div class="terms">
+            <label><input type="checkbox" required> Tôi đồng ý với các điều khoản.</label>
+        </div>
+        
+        <button type="submit">ĐĂNG KÝ NGAY</button>
+    </form>
+
+    <div class="footer-links">
+        Đã có tài khoản? <a href="dangnhap.html">Đăng nhập tại đây</a>
+    </div>
+     <div class="footer-links">
+         <a href="index.html">Quay lại trang chủ</a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      
+      <ul class="nav nav-pills nav-stacked">
+        <li ><a href="index.html">Trang chủ</a></li>
+        <li><a href="đh.html">Trãi nghiệm học ĐH</a></li>
+        <li><a href="tour.html">Trãi nghiệm đi tour Đà lạt</a></li>
+        <li><a href="lienhe.html">Liên hệ</a></li>
+      </ul><br>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Tiềm kiếm..">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-9">
+      <h4><small>Trãi nghiệm học Đh năm 1</small></h4>
+      <hr>
+      <p>1. Cú sốc "Tự học"
+Khác với cấp 3 khi thầy cô cầm tay chỉ việc, ở đại học, giảng viên chỉ đóng vai trò hướng dẫn.
+Tự chủ thời gian: Bạn sẽ có những ngày trống tiết, nhưng đừng để nó trôi qua vô ích. Việc quản lý thời gian là kỹ năng sống còn.
+Học liệu: Đừng chỉ dựa vào giáo trình. Hãy tận dụng thư viện và các khóa học online (như Coursera, Udemy) để đào sâu kiến thức, đặc biệt là với các ngành kỹ thuật hay lập trình.</p>
+<p>2. Xây dựng nền tảng từ những thứ "khô khan"
+Năm nhất thường tập trung vào các môn đại cương như Toán cao cấp, Triết học hay Vật lý đại chúng.
+Đừng coi thường đại cương: Những môn toán như Giải tích hay Đại số tuyến tính chính là nền tảng tư duy cực kỳ quan trọng nếu bạn muốn theo đuổi các ngành như Công nghệ thông tin hay Kỹ thuật.
+Mẹo học tập: Thay vì học vẹt, hãy thử tìm hiểu ứng dụng thực tế của chúng. Ví dụ, logic trong lập trình thực chất có liên quan rất chặt chẽ với logic toán học.</p>
+<p>3. Mở rộng mạng lưới kết nối
+Đại học không chỉ là nơi để lấy bằng, mà là nơi để xây dựng những mối quan hệ chất lượng.
+Câu lạc bộ (CLB): Tham gia một CLB (về học thuật, kỹ năng hay sở thích như nhiếp ảnh, xe máy) là cách nhanh nhất để gặp những người cùng chí hướng và rèn luyện kỹ năng mềm.
+Bạn bè: Đừng chỉ chơi với bạn cùng lớp. Hãy thử giao lưu với các anh chị khóa trên để học hỏi kinh nghiệm về "mẹo" thi cử hoặc những dự án thực tế.</p>
+<p>4. Trải nghiệm cuộc sống sinh viên
+Đây là thời điểm bạn bắt đầu khám phá bản thân và thế giới xung quanh.
+Kỹ năng sống: Nếu bạn ở trọ, việc tự nấu ăn, quản lý chi tiêu và tự chăm sóc bản thân khi ốm đau sẽ giúp bạn trưởng thành rất nhanh.
+Sở thích cá nhân: Đừng quên dành thời gian cho những đam mê riêng. Có thể là những chuyến đi trải nghiệm ngắn ngày bằng xe máy để xả stress sau những giờ học căng thẳng, hay tự mày mò thiết kế những sản phẩm cá nhân như một trang web giới thiệu bản thân chẳng hạn.
+</p> 
+<p>5.Bắt đầu với những dự án nhỏ
+Đừng đợi đến năm 3, năm 4 mới làm dự án.
+Nếu bạn thích lập trình, hãy thử viết những dòng code C++ đơn giản hay thiết kế một giao diện web bằng Bootstrap ngay từ bây giờ. Những sản phẩm "nhỏ nhưng có võ" này sẽ giúp bạn tự tin hơn rất nhiều khi bước vào các môn chuyên ngành.
+Lời khuyên nhỏ: Đừng quá áp lực về việc phải hoàn hảo ngay lập tức. Năm nhất là để sai và để sửa. Hãy cứ xông pha, học hết mình và chơi cũng phải "chất" nhé!</p>
+      
+      <br><br>
+      <hr>
+
+      
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
